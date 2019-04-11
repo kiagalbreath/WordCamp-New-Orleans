@@ -11,7 +11,44 @@
     <title>WordCamp New Orleans</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" id="#home">
-    <h1>WordCamp New Orleans</h1>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by NVC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#schedule">Schedule</a>
+        </li>
+      </div>
+    </div>
+</nav>
+<!-- /navbar -->
+
+<!-- jumbotron -->
+<div class="jumbotron jumbotron-fluid" id="jumbotron">
+  <div class="container text-sm-center pt-5">
+    <h1 class="display-4">WorldCamp New Orleans</h1>
+    <p class="lead">A One-day Conference About WordPress.</p>
+    <div class="mt-5">
+  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
+  <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
+</div>
+  </div>
+</div>
+<!-- /jumbotron -->
 
 <!--Columns--!> <div class="container">
   
@@ -224,68 +261,136 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="register">Register for WordCamp Conference</h5>
+        <h4 class="modal-title" id="register">Register for WordCamp Conference</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+      <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+  <strong>Hurry!</strong> Early bird registration ends in two days.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+      <form>
+       <h5> Basic Info </h5>
+  <div class="form-group row">
+    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" id="inputName3" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="jobroleFormControlSelect1">Job Role</label>
+    <select class="form-control" id="jobroleFormControlSelect1">
+      <option>WordPress Developer</option>
+      <option>Web Designer</option>
+      <option>Instructional Designer</option>
+      <option>Web Developer</option>
+    </select>
+  </div>  
+  <hr>
+  <form>
+  <h5> Which topics interest you most?</h5>
+  <div class="form-group row">
+    
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">Wordpress Plugins</label>
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          PHP
+        </label>
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          CSS and Javascript
+        </label>
+      </div>
+    </div>
+    
+  </div>
+  </form>
+  <hr>
+<form>
+<h5> Payment Information</h5>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputcardnum">Card Number:</label>
+      <input type="text" class="form-control" id="inputcardnum">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputzip">Zip Code:</label>
+      <input type="text" class="form-control" id="inputzip">
+    </div>
+  <div class="form-group col-md-2">
+      <label for="inputcvv">CVV:</label>
+      <input type="text" class="form-control" id="inputcvv">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="form-group col-md-6">
+      <label for="inputState">Expiration Date:</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>01-January</option>
+        <option>02-February</option>
+        <option>03-March</option>
+        <option>04-April</option>
+        <option>05-May</option>
+        <option>06-June</option>
+        <option>07-July</option>
+        <option>08-August</option>
+        <option>09-September</option>
+        <option>10-October</option>
+        <option>11-November</option>
+        <option>12-December</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+    <label for="inputState">Year:</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+      </select>
+    </div>
+  </div>
+</form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Register</button>
       </div>
     </div>
   </div>
 </div>
 <!-- /Modal -->
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
   </body>
+
 </html>
-
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by NVC</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#speakers">Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#schedule">Schedule</a>
-        </li>
-      </div>
-    </div>
-  </div>
-</nav>
-<!-- /navbar -->
-
-<!-- jumbotron -->
-<div class="jumbotron jumbotron-fluid" id="jumbotron">
-  <div class="container text-sm-center pt-5">
-    <h1 class="display-4">WorldCamp New Orleans</h1>
-    <p class="lead">A One-day Conference About WordPress.</p>
-    <div class="mt-5">
-  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
-  <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
-</div>
-  </div>
-</div>
-<!-- /jumbotron -->
