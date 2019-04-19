@@ -1,1 +1,64 @@
+body {
+     background-image: url("images/bgd2-01.jpg");
+     background-repeat: no-repeat;
+      background-attachment: fixed;
+  background-position: center
+}
+/*navbar*/
 
+.navbar  {
+    color: #2A1F73;
+}
+
+/*navbar*/
+
+/*jumbotron*/
+.jumbotron h1{
+     color: #ffffff;
+     font-size: 75px;
+     text-shadow: 2px 2px 4px #000000;
+     }
+     .jumbotron p {
+     color: #ffffff;
+     font-weight:bold;
+     text-shadow: 1px 1px 2px #000000;
+     }
+     .jumbotron {
+     background-color: transparent;
+   padding-top: 5px;
+   margin-bottom: 5px;
+}
+
+/*jumbotron*/
+
+
+/*about*/
+.row{
+   margin-top: 5px;
+   padding: 10px;
+   background-color: rgba(39, 32, 113, 0.9);
+   color: white;
+}
+.row h3 {
+font-size: 35px;
+text-shadow: 1px 1px 2px #000000;
+text-decoration: underline;
+text-decoration-color: white; 
+}
+/*about*/
+
+
+/*carousel*/
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+  }
+.container > .carousel slide{
+background-color: rgba(134, 88, 149, 0.9);
+}
+.container h2 {
+color: white; 
+text-align: center;
+text-shadow: 2px 2px 4px #000000;
+    }
+    /*carousel*/
